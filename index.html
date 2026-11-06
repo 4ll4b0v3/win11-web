@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Win11 Web</title>
+  <meta name="description" content="A Windows 11-style desktop that runs entirely in your browser.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light">
+  <div id="screen">
+    <div id="desktop">
+      <div id="icons"></div>
+      <div id="windows"></div>
+      <div id="snap"></div>
+    </div>
+
+    <!-- Start menu -->
+    <div id="startmenu" class="flyout hidden">
+      <input id="start-search" class="start-search" placeholder="Type here to search apps and files" autocomplete="off" spellcheck="false">
+      <div id="start-body">
+        <div class="sec-title">Pinned</div>
+        <div id="pinned" class="pinned"></div>
+        <div class="sec-title">Recommended</div>
+        <div id="recent" class="recent"></div>
+      </div>
+      <div id="start-results" class="hidden"></div>
+      <div class="start-foot">
+        <button id="user-btn" class="user"><span class="avatar"></span><span id="user-name">User</span></button>
+        <button id="power-btn" class="tbtn" title="Power"></button>
+      </div>
+    </div>
+
+    <!-- Quick settings -->
+    <div id="quick" class="flyout hidden">
+      <div class="q-tiles" id="q-tiles"></div>
+      <label class="q-slider"><span id="q-sun"></span><input id="q-bright" type="range" min="30" max="100"></label>
+      <label class="q-slider"><span id="q-vol"></span><input id="q-volume" type="range" min="0" max="100" value="60"></label>
+    </div>
+
+    <!-- Calendar -->
+    <div id="calendar" class="flyout hidden"></div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+      <div class="tb-left"></div>
+      <div id="tb-center"></div>
+      <div id="tb-right">
+        <button id="tb-tray" class="tray-btn" title="Quick settings"></button>
+        <button id="tb-clock" class="clock" title="Calendar"><span id="clock-t"></span><span id="clock-d"></span></button>
+        <button id="tb-show" class="show-desktop" title="Show desktop"></button>
+      </div>
+    </div>
+
+    <!-- Lock / boot -->
+    <div id="lock">
+      <div class="lock-time" id="lock-time"></div>
+      <div class="lock-date" id="lock-date"></div>
+      <div class="lock-hint">Click or press any key to sign in</div>
+    </div>
+    <div id="boot"><div class="boot-logo"></div><div class="spinner"></div></div>
+  </div>
+
+  <script src="js/icons.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/fs.js"></script>
+  <script src="js/apps/explorer.js"></script>
+  <script src="js/apps/notepad.js"></script>
+  <script src="js/apps/calculator.js"></script>
+  <script src="js/apps/terminal.js"></script>
+  <script src="js/apps/browser.js"></script>
+  <script src="js/apps/paint.js"></script>
+  <script src="js/apps/settings.js"></script>
+  <script src="js/shell.js"></script>
+</body>
+</html>
