@@ -22,7 +22,7 @@ A Windows 11-style desktop that runs entirely in your browser. Plain HTML, CSS a
 | Notepad | Edit and save text files to the virtual file system |
 | Calculator | Standard calculator with keyboard support (no `eval`) |
 | Terminal | `ls`, `cd`, `cat`, `mkdir`, `touch`, `rm`, `mv`, `echo > file`, `open`, `theme`, `neofetch`, ... |
-| Browser | Address bar and iframe (some sites block embedding; that is a web limit) |
+| Browser | Address bar and iframe that loads pages through `webproxy.php` (set `PROXY` in `js/apps/browser.js`) |
 | Paint | Brush, eraser, colors, PNG download |
 | Settings | Personalization, display brightness, username, reset |
 
